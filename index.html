@@ -1,78 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Graphic Designer Portfolio</title>
-  <!-- Add your custom CSS file here -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Add Google Fonts or other fonts if needed -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Graphic Designer</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <p>Graphic Designer</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        <!-- Add a short description about yourself here -->
-        Hi, I'm [Your Name], a passionate graphic designer with expertise in [your skills, e.g., branding, illustration, UI/UX design]. I love creating visually appealing designs that communicate effectively.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <!-- Add your projects here -->
-        <!-- Example Project 1 -->
-        <div class="project">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1 Title</h3>
-          <p>Short description of the project.</p>
+    <!-- ===== HEADER SECTION ===== -->
+    <header class="header">
+        <div class="container">
+            <!-- Change logo text to your name -->
+            <h1 class="logo">Your Name</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <!-- Example Project 2 -->
-        <div class="project">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2 Title</h3>
-          <p>Short description of the project.</p>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="container">
+            <!-- Update with your intro text -->
+            <h2>Visual Designer Specializing in Brand Identity & Digital Experiences</h2>
         </div>
+    </section>
 
-        <!-- Add more projects as needed -->
-      </div>
-    </div>
-  </section>
+    <!-- ===== PROJECTS GRID ===== -->
+    <main class="projects" id="work">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- PROJECT 1 - Duplicate this block for each project -->
+                <article class="project-card">
+                    <!-- Replace 'project1.jpg' with your image filename -->
+                    <img src="assets/project1.jpg" alt="Project 1 Description" class="project-image">
+                    <div class="project-info">
+                        <!-- Update project details -->
+                        <h3>Brand Identity Design</h3>
+                        <p>Client: Example Client</p>
+                        <p>Tools: Adobe Illustrator, Photoshop</p>
+                        <a href="#" class="btn">View Case Study</a>
+                    </div>
+                </article>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>
-        <!-- Add your contact information here -->
-        Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
-        Upwork: <a href="https://www.upwork.com/freelancers/~yourprofile">My Upwork Profile</a>
-      </p>
-    </div>
-  </section>
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <img src="assets/project2.jpg" alt="Project 2 Description" class="project-image">
+                    <div class="project-info">
+                        <h3>Web Design Project</h3>
+                        <p>Client: Another Client</p>
+                        <p>Tools: Figma, Webflow</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </article>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Update with your bio -->
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Your Name" class="profile-photo">
+                <div class="bio">
+                    <p>With [X] years of experience in graphic design, I specialize in creating compelling visual solutions that combine aesthetic appeal with strategic thinking. My work focuses on brand identity development, digital experiences, and print design.</p>
+                    <!-- Update skills -->
+                    <h3>Core Skills:</h3>
+                    <ul class="skills">
+                        <li>Brand Identity Design</li>
+                        <li>UI/UX Design</li>
+                        <li>Print Design</li>
+                        <li>Art Direction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <!-- Update contact information -->
+            <div class="contact-info">
+                <p>
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> your.email@example.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.upwork.com/freelancers/~YOUR_PROFILE" 
+                       target="_blank" 
+                       class="contact-link">
+                        <i class="fab fa-upwork"></i> Upwork Profile
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Update copyright year -->
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
